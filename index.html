@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Emeline Boulic – Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=DM+Sans:wght@300;400;500&family=Caveat:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="navbar">
+    <a href="index.html" class="logo"><img src="assets/logoSitePortfolio.png" alt="Logo Em" class="logo-img" /></a>
+    <div class="nav-links">
+      <a href="index.html" class="nav-btn active">Portfolio</a>
+      <a href="apropos.html" class="nav-btn">À propos</a>
+      <a href="#contact" class="nav-btn">Contact</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-left">
+      <div class="hero-deco">
+        <img src="assets/customEmeline.png" alt="Emeline Boulic" class="hero-photo"/>
+      </div>
+    </div>
+    <div class="hero-right">
+      <h1 class="hero-name">Emeline Boulic</h1>
+      <p class="hero-tagline" id="heroTagline">Votre future brand designer</p>
+      <p class="hero-bio"><p>Animée par ma passion pour le dessin et la création, j'ai intégré le BUT Métiers du Multimédia et de l'internet.</p><br> <p>Mon parcours a commencé à l'IUT de Lannion en septembre 2023, période durant laquelle j'ai pu consolider mes compétences en création de site vitrines et en rédaction web (SEO), en élaboration de stratégies de communication, et en conception d’identités visuelles.</p><br> <p>Une fois diplômée, je souhaite intégrer une agence de communication.</p>
+      <br>
+      <a href="apropos.html" class="btn-primary">Mon expérience</a>
+    </div>
+  </section>
+
+  
+  <!-- SERVICES -->
+  <section class="services" id="experience">
+    <div class="services-inner">
+      <div class="services-text">
+        <h2>J'accompagne vos projets digitaux</h2>
+        <div class="service-tags">
+          <span class="tag tag-active" data-tab="reseaux"  data-img="assets/mockup_rs.png">Réseaux sociaux</span>
+          <span class="tag" data-tab="identite"  data-img="assets/identité_visuelle.png">identité visuelle</span>
+          <span class="tag" data-tab="site"  data-img="assets/mockup_appli.png">site web</span>
+        </div>
+        <p id="serviceText">Créons du contenu qui vous ressemble !</p>
+        <p id="serviceText2">Je définis votre stratégie social média et réalise des contenus pour développer votre présence en ligne.</p>
+        <p id="serviceText3">De la ligne éditoriale à la création des visuels, je vous accompagne à chaque étape : choix des formats, ton de communication, rythme de publication et cohérence graphique.</p>
+        <a href="apropos.html" class="btn-primary" style="margin-top:1.2rem;display:inline-block">Mon expérience</a>
+      </div>
+      <div class="services-visual">
+        <img id="serviceImage" src="assets/mockup_rs.png" alt="Mockups" class="hero-photo"/>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJETS -->
+  <section class="projets">
+    <h2 class="section-title">Mes projets</h2>
+    <p class="section-sub">Lors de mon BUT MMI j'ai eu l'occasion de mener différents projets.</p>
+    <!--
+    <div class="filter-tabs">
+      <button class="filter-btn active">Webdesign</button>
+      <button class="filter-btn">Graphisme</button>
+      <button class="filter-btn">Communication</button>
+      <button class="filter-btn">Vidéo</button>
+    </div>
+    -->
+    <div class="projets-grid">
+      <a href="arcane.html" class="projet-card">
+        <div class="projet-img">
+          <img class="projet-img" src="assets/miniature_arcane.png" alt="miniature du projet arcane"/>
+        </div>
+        <p class="projet-label">Calendrier Arcane</p>
+      </a>
+      <a href="jagu.html" class="projet-card">
+        <div class="projet-img">
+          <img class="projet-img" src="assets/dossier_jagu.png" alt="miniature du projet roche jagu"/>
+        </div>
+        <p class="projet-label">Signalétique pour la Roche Jagu</p>
+      </a>
+      <a href="alep.html" class="projet-card">
+        <div class="projet-img">
+          <img class="projet-img" src="assets/miniature_alep.png" alt="miniature du projet éditions ALeP"/>
+        </div>
+        <p class="projet-label">Accompagnement des Editions ALeP</p>
+      </a>
+      <a href="mmi.html" class="projet-card">
+        <div class="projet-img">
+          <img class="projet-img" src="assets/logo_mmi_net.jpg" alt="miniature du projet éditorial MMI"/>
+        </div>
+        <p class="projet-label">Calendrier Editorial MMI</p>
+      </a>
+      <!--
+      <a href="projet.html" class="projet-card">
+        <div class="projet-img"></div>
+        <p class="projet-label">Boule à neige 3D</p>
+      </a>
+      <a href="projet.html" class="projet-card">
+        <div class="projet-img"></div>
+        <p class="projet-label">Identité visuelle pour Tasty design</p>
+      </a>
+      <a href="projet.html" class="projet-card">
+        <div class="projet-img"></div>
+        <p class="projet-label">Calendrier de l'avent numérique</p>
+      </a>
+      <a href="projet.html" class="projet-card">
+        <div class="projet-img"></div>
+        <p class="projet-label">Article pour la webmagazine IUTOPIE</p>
+      </a>
+      -->
+    </div>
+  </section>
+
+  <!-- SOCIAL CTA -->
+  <section class="social-cta">
+    <p>Si tu as aimé mon portfolio tu peux<br/>suivre mes aventures sur :</p>
+    <div class="social-icons">
+      <a href="https://www.linkedin.com/in/emeline-boulic/?isSelfProfile=true" class="social-icon linkedin">
+        <svg viewBox="0 0 24 24" fill="white" width="28" height="28"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+      </a>
+      <a href="https://www.instagram.com/chibimeline?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="social-icon instagram">
+        <svg viewBox="0 0 24 24" fill="white" width="28" height="28"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <h2 class="section-title">Me contacter</h2>
+<form class="contact-form" action="https://formspree.io/f/mlgpdlwy" method="POST">
+      <div class="form-row">
+        <div class="form-group">
+          <label>Votre nom prénom</label>
+          <input type="text" name="nom"/>
+        </div>
+        <div class="form-group">
+          <label>Votre adresse email</label>
+          <input type="email" name="email"/>
+        </div>
+      </div>
+      <div class="form-group full">
+        <label>Sujet de l'email</label>
+        <input type="text" name="sujet"/>
+      </div>
+      <div class="form-group full">
+        <label>Votre message</label>
+        <textarea rows="6"></textarea>
+      </div>
+      <div style="text-align:right">
+        <button type="submit" class="btn-primary">Envoyer</button>
+      </div>
+    </form>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>Site développé par &nbsp;<span class="footer-name">「 ✦ Emeline Boulic ✦ 」</span></p>
+  </footer>
+
+ 
+
+
+
+  <script src="main.js"></script>
+  <script>
+    // Service tabs text switching
+    const serviceTabs = {
+      reseaux: [
+        "Créons du contenu qui vous ressemble !",
+        "Je définis votre stratégie social média et réalise des contenus pour développer votre présence en ligne.",
+        "De la ligne éditoriale à la création des visuels, je vous accompagne à chaque étape : choix des formats, ton de communication, rythme de publication et cohérence graphique."
+      ],
+      identite: [
+        "Créons une identité visuelle qui vous ressemble !",
+        "De la réflexion créative à la déclinaison des supports, je conçois des identités visuelles qui parlent à votre audience : logotype, palettes de couleurs, typographies et éléments graphiques.",
+        "Je construis des univers graphiques qui traduisent vos valeurs et renforcent votre image de marque en s'adaptant à tous vos supports de communication, print et digitaux."
+      ],
+      site: [
+        "Créons une plateforme qui vous ressemble !",
+        "De la réflexion sur l'expérience utilisateur à la conception visuelle, je travaille sur la structure des pages, l'ergonomie, la rédaction, le référencement ainsi que sur l'identité graphique du site.",
+        "Je conçois des sites vitrines/blogs valorisant votre marque et facilitant l'accès à l'information et à vos produits/services."
+      ]
+    };
+
+    const serviceTags = document.querySelectorAll('.service-tags .tag');
+    const serviceTexts = [
+      document.getElementById('serviceText'),
+      document.getElementById('serviceText2'),
+      document.getElementById('serviceText3')
+    ];
+
+    serviceTags.forEach(tag => {
+      tag.addEventListener('click', function () {
+        serviceTags.forEach(t => t.classList.remove('tag-active'));
+        this.classList.add('tag-active');
+        document.getElementById('serviceImage').src = this.dataset.img;
+
+        const texts = serviceTabs[this.dataset.tab];
+        serviceTexts.forEach((el, i) => {
+          el.textContent = texts[i];
+        });
+      });
+    });
+  </script>
+
+
+
+
+
+
+
+  <script src="main.js"></script>
+  <script>
+    const taglines = [
+      "Votre future brand designer",
+      "Votre future webdesigner",
+      "Votre future community manager"
+    ];
+    let current = 0;
+    const el = document.getElementById('heroTagline');
+
+    setInterval(() => {
+      el.classList.add('tagline-fade-out');
+      setTimeout(() => {
+        current = (current + 1) % taglines.length;
+        el.textContent = taglines[current];
+        el.classList.remove('tagline-fade-out');
+        el.classList.add('tagline-fade-in');
+        setTimeout(() => el.classList.remove('tagline-fade-in'), 500);
+      }, 400);
+    }, 5000);
+  </script>
+</body>
+</html>

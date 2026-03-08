@@ -1,0 +1,467 @@
+/* =========================================
+   JAGU INTERACTIVE – PAGE SPÉCIFIQUE
+   ========================================= */
+
+/* ── HERO TITRE ── */
+
+
+.jagu-hero {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2.5rem 3rem 1.5rem;
+  text-align: center;
+}
+
+.jagu-titre {
+  font-family: var(--font-hand);
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.3;
+  margin-bottom: 1.2rem;
+}
+
+.jagu-meta {
+  font-size: 0.85rem;
+  color: var(--blue);
+  margin-bottom: 0.8rem;
+  font-weight: 500;
+}
+
+.jagu-intro {
+  font-size: 0.9rem;
+  line-height: 1.7;
+  max-width: 680px;
+  margin: 0 auto 1.5rem;
+  color: var(--text);
+}
+
+.jagu-dossier {
+  margin-top: 0.5rem;
+}
+
+/* ── EQUIPE + MISSIONS ── */
+.jagu-equipe-section {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 0 3rem 0 1rem;
+  display: flex;
+  gap: 3rem;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.jagu-equipe-left { /* espace entre l'image et le bloc de texte a droite*/
+  flex: 0 0 220px;
+}
+
+
+.jagu-equipe-img {
+  width: 515px;
+  height: 410.03px;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+}
+
+.jagu-equipe-caption {
+  font-size: 0.75rem;
+  color: var(--text-light);
+  text-align: center;
+  margin-top: 0.4rem;
+}
+
+.jagu-equipe-right {
+  flex: 1;
+}
+
+.jagu-section-title {
+  font-family: var(--font-hand);
+  font-size: 1.3rem;
+  font-weight: 400;
+  margin-bottom: 0.8rem;
+}
+
+.jagu-missions {
+  padding-left: 1.2rem;
+  font-size: 0.88rem;
+  line-height: 1.8;
+}
+
+.jagu-missions li {
+  margin-bottom: 0.2rem;
+}
+
+/* ── PANNEAUX ── */
+.jagu-panneaux {
+  max-width: 900px;
+  margin: 8.5rem auto;
+  padding: 0 3rem;
+  display: flex;
+  gap: 10rem;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.jagu-panneau-left {
+  flex: 0 0 350px;
+}
+
+.jagu-panneau-right {
+  flex: 0 0 380px;
+}
+
+.jagu-panneau-img {
+  width: 100%;
+  aspect-ratio: 3/4;
+  object-fit:contain;
+  border-radius: 8px;
+  display: block;
+  background: transparent;
+}
+
+/* ── TELEPHONE MOCKUP ── */
+.jagu-phone-section {
+  display: flex;
+  justify-content: center;
+  padding: 3rem 3rem 3rem 8rem;
+}
+
+.jagu-phone-wrapper {/* change la taille du téléphone ET des images qui défilent */
+   position: relative;
+  width: 600px;
+}
+
+.jagu-phone-img {
+  width: 100%;
+  display: block;
+  position: relative;
+  z-index: 1;
+  
+}
+
+.jagu-phone-screen {
+  position: absolute;
+  top: 3.5%;
+  left: 11%;
+  width: 42%;
+  height: 55%;
+  overflow: hidden;
+  border-radius: 6% 6% 15% 15%;
+  z-index: 2;
+}
+
+.arcane-phone-screen {
+  object-position: top;
+  position: absolute;
+  top: 1%;
+  left: 11%;
+  width: 42%;
+  height: 65%;
+  overflow: hidden; /*coupe le bas de l'image*/
+  border-radius: 6% 6% 15% 15%;
+  z-index: 2;
+}
+
+
+.phone-slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 0.6s ease;
+}
+
+.phone-slide.active {
+  opacity: 1;
+}
+
+/* ── CHARTE GRAPHIQUE ── */
+.jagu-charte {
+  max-width: 900px;
+  margin: 1rem auto 3rem;
+  padding: 0 3rem;
+}
+
+.alep-charte-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.alep-charte-typo {
+  text-align: center;
+}
+
+.alep-charte-couleurs {
+  width: 50%;
+  border-radius: 6px;
+  display: block;
+}
+
+.jagu-charte-inner {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.jagu-charte-typo {
+  flex: 0 0 auto;
+}
+
+.jagu-font-name {
+  font-family: 'Georgia', serif;
+  font-size: 1.3rem;
+  line-height: 1.4;
+}
+
+.alep-font-name {
+  font-family: 'Garamond';
+  font-size: 1.3rem;
+  line-height: 1.4;
+}
+
+.alep-font-name2 {
+  font-family: 'Helvetica World';
+  font-size: 1.1rem;
+  line-height: 1.4;
+}
+
+.alep-font-sub {
+  font-family: 'Roboto';
+  font-size: 0.9rem;
+  color: var(--text-light);
+}
+
+.mmi-font-name{
+  font-family: MuseoModerno;
+  font-size: 0.9rem;
+  color: var(--text-light);
+}
+
+.mmi-font-sub {
+  font-family: var(--font-aileron);
+  font-weight: bold;
+  font-size: 0.9rem;
+  color: var(--text-light);
+}
+
+.arcane-font-name{
+  font-family: 'Arcane Nine', sans-serif;
+  font-size: 2rem;
+  color: var(--text-light);
+}
+
+.arcane-font-sub {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1rem;
+  color: var(--text-light);
+}
+.jagu-charte-couleurs {
+  display: flex;
+  gap: 0.5rem;
+  flex: 1;
+}
+
+.jagu-couleurs-img {
+  width: 100%;
+  border-radius: 6px;
+  display: block;
+}
+
+.jagu-couleur span {
+  font-size: 0.7rem;
+  font-weight: 500;
+  color: #222;
+}
+
+
+
+
+
+/* ── PC MOCKUP ── */
+.pc-section {
+  display: flex;
+  justify-content: center;
+  padding: 3rem;
+}
+
+.pc-wrapper {
+  position: relative;
+  width: 700px;
+}
+
+.pc-img {
+  width: 100%;
+  display: block;
+  position: relative;
+  z-index: 2;
+}
+
+.pc-screen {
+  position: absolute;
+  top: 6%;
+  left: 11.5%;
+  width: 77%;
+  height: 76%;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.pc-slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 0.8s ease;
+  animation: none;
+}
+
+.pc-slide.active {
+  opacity: 1;
+  animation: scrollDown 4s linear forwards;
+}
+
+
+
+/* photographies */
+
+.jagu-horizontal-imgs {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  padding: 2rem 3rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.jagu-horizontal-img {
+  width: 70%;
+  aspect-ratio: 4/3;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+
+
+@keyframes scrollDown {
+  0%   { transform: translateY(0); }
+  100% { transform: translateY(-60%); }
+}
+
+
+
+
+/* ── RESPONSIVE ── */
+
+@media (max-width: 900px) { /* tablette */
+
+  .jagu-equipe-section {
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+  }
+
+  .jagu-equipe-left {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+  }
+
+  .jagu-equipe-right {
+    width: 100%;
+     max-width: 900px;
+     align-items: center;
+     align-content: center;
+  }
+
+  .jagu-panneaux {
+    gap: 3rem;
+}
+
+ .jagu-horizontal-imgs {
+    padding: 2rem 1.5rem;
+  }
+
+  .jagu-horizontal-img {
+    width: 45%;
+  }
+
+}
+
+
+
+
+
+@media (max-width: 680px) {
+
+  .alep-charte-inner {
+    padding: 0 1.5rem;
+  }
+  
+  .jagu-hero {
+    padding: 2rem 1.5rem 1rem;
+  }
+
+  .jagu-titre {
+    font-size: 1.3rem;
+  }
+
+  .jagu-equipe-section {
+    flex-direction: column;
+    padding: 0 1.5rem;
+    gap: 1.5rem;
+  }
+
+  .jagu-equipe-left {
+    flex: none;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .jagu-equipe-img {
+    max-width: 280px;
+  }
+
+  .jagu-panneaux {
+    flex-direction: column;
+    padding: 0 1.5rem;
+  }
+
+  .jagu-panneau-left {
+    flex: none;
+    width: 100%;
+  }
+
+  .jagu-phone-wrapper {
+    width: 600px;
+  }
+
+  .jagu-charte-inner {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .jagu-charte {
+    padding: 0 1.5rem;
+  }
+
+.jagu-horizontal-imgs {
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 1.5rem;
+}
+
+.jagu-horizontal-img {
+  width: 100%;
+}
+
+}
