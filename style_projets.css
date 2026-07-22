@@ -58,8 +58,25 @@
 .jagu-equipe-img {
   width: 515px;
   height: 410.03px;
-  object-fit: cover;
+  object-fit:contain;
   border-radius: 8px;
+  display: block;
+}
+
+.arcane-equipe-img {
+  width: 515px;
+  height: 410.03px;
+  object-fit:cover;
+  border-radius: 8px;
+  display: block;
+}
+
+
+.mmi-img {
+  width: 515px;
+  height: 510px;
+  object-fit:contain;
+  border-radius: 0px;
   display: block;
 }
 
@@ -151,14 +168,15 @@
 }
 
 .arcane-phone-screen {
-  object-position: top;
   position: absolute;
-  top: 1%;
+  top: 3.5%;
   left: 11%;
   width: 42%;
-  height: 65%;
-  overflow: hidden; /*coupe le bas de l'image*/
+  height: 55%;
+  /*
+  overflow: hidden;
   border-radius: 6% 6% 15% 15%;
+  */
   z-index: 2;
 }
 
@@ -172,6 +190,22 @@
   object-fit: cover;
   opacity: 0;
   transition: opacity 0.6s ease;
+}
+
+.phone-slide-arcane {
+  position: absolute;
+  top: -4%;
+  left: -5%;
+  width: 110%;
+  height: 110%;
+  object-fit: contain;
+  opacity: 0;
+  transition: opacity 0.6s ease;
+  border-radius: 6% 6% 27% 15%;
+}
+
+.phone-slide-arcane.active {
+  opacity: 1;
 }
 
 .phone-slide.active {

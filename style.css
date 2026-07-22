@@ -241,6 +241,21 @@ body {
   transition: background 0.2s ease, transform 0.1s ease;
 }
 
+.btn-stage-experience {
+  display: inline-block;
+  background: var(--blue);
+  color: var(--white);
+  border: none;
+  border-radius: 999px;
+  padding: 0.55rem 1.4rem;
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  font-weight: 400;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 0.2s ease, transform 0.1s ease;
+}
+
 .btn-primary:hover {
   background: #93aef7;
   transform: translateY(-1px);
@@ -517,6 +532,8 @@ body {
   margin-bottom: 1rem;
   text-align: center;
 }
+
+
 
 .stage-badge {
   background: var(--blue-soft);

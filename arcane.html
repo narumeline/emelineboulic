@@ -36,7 +36,7 @@
   <!-- PHOTO EQUIPE + MISSIONS -->
   <section class="jagu-equipe-section">
     <div class="jagu-equipe-left">
-      <img src="assets/Equipe_arcane_workshp_de_noel.jpg" alt="Équipe Arcane" class="jagu-equipe-img" onerror="this.style.background='#D1D5E0';this.style.height='220px';this.style.display='block';this.removeAttribute('src')" />
+      <img src="assets/Equipe_arcane_workshp_de_noel.jpg" alt="Équipe Arcane" class="arcane-equipe-img" onerror="this.style.background='#D1D5E0';this.style.height='220px';this.style.display='block';this.removeAttribute('src')" />
       <p class="jagu-equipe-caption">Équipe Arcane</p>
     </div>
     <div class="jagu-equipe-right">
@@ -62,17 +62,16 @@
     </div>
   </section>
 
-  <!-- TELEPHONE MOCKUP -->
+
+   <!-- TELEPHONE MOCKUP -->
   <section class="jagu-phone-section">
     <div class="jagu-phone-wrapper">
       <img src="assets/telephone_écran_vide.png" alt="Téléphone" class="jagu-phone-img" />
       <div class="arcane-phone-screen">
-        <img src="assets/arcane image 1.png" alt="App screen 1" class="phone-slide active" />
-        <img src="assets/arcane image 2.png" alt="App screen 2" class="phone-slide" />
-        <img src="assets/arcane image 3.png" alt="App screen 3" class="phone-slide" />
-        <img src="assets/arcane image 4.png" alt="App screen 4" class="phone-slide" />
-        <img src="assets/arcane image 5.png" alt="App screen 4" class="phone-slide" />
-
+        <img src="assets/arcane image 1.png" alt="App screen 1" class="phone-slide-arcane active" />
+        <img src="assets/arcane image 2.png" alt="App screen 2" class="phone-slide-arcane" />
+        <img src="assets/arcane image 3.png" alt="App screen 3" class="phone-slide-arcane" />
+        <img src="assets/arcane image 4.png" alt="App screen 4" class="phone-slide-arcane" />
       </div>
     </div>
   </section>
@@ -140,9 +139,10 @@
 
   <script>
     // Slideshow dans le téléphone
-    const slides = document.querySelectorAll('.phone-slide');
+    const slides = document.querySelectorAll('.phone-slide-arcane');
     let currentSlide = 0;
 
+    
     setInterval(() => {
       slides[currentSlide].classList.remove('active');
       currentSlide = (currentSlide + 1) % slides.length;
