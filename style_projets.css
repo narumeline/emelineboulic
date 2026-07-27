@@ -21,14 +21,14 @@
 }
 
 .jagu-meta {
-  font-size: 0.85rem;
+  font-size: 1rem;
   color: var(--blue);
   margin-bottom: 0.8rem;
   font-weight: 500;
 }
 
 .jagu-intro {
-  font-size: 0.9rem;
+  font-size: 1 rem;
   line-height: 1.7;
   max-width: 680px;
   margin: 0 auto 1.5rem;
@@ -54,6 +54,10 @@
   flex: 0 0 220px;
 }
 
+.equipe-left-long-texte { /* espace entre l'image et le bloc de texte a droite*/
+  flex: 0 0 220px;
+  padding-top: 80px;
+}
 
 .jagu-equipe-img {
   width: 515px;
@@ -100,13 +104,14 @@
 
 .jagu-missions {
   padding-left: 1.2rem;
-  font-size: 0.88rem;
+  font-size: 1.4 rem;
   line-height: 1.8;
 }
 
 .jagu-missions li {
   margin-bottom: 0.2rem;
 }
+
 
 /* ── PANNEAUX ── */
 .jagu-panneaux {
@@ -408,6 +413,14 @@
     text-align: left;
   }
 
+   .equipe-left-long-texte {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+  }
+
   .jagu-equipe-right {
     width: 100%;
      max-width: 900px;
@@ -454,6 +467,15 @@
   }
 
   .jagu-equipe-left {
+    flex: none;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  
+  .equipe-left-long-texte {
     flex: none;
     width: 100%;
     display: flex;
